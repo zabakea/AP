@@ -1,0 +1,51 @@
+:root {
+   --primary-color: #FF9632;
+    --secondary-color: #386082;
+    --terciary-color:#218169;
+    --font-color-primary: #0B131A;
+    --font-color-secondary: #FFFFFF;
+    --primary-color-buttons:  #40407F;
+    --font-body: 'Open Sans', sans-serif;
+    --font-headers:  'Aleo', serif;
+}
+
+/* HEADER STYLE */
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 1.3rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: var();
+    font-family: var();
+}
+
+a:hover {
+    color: var();
+}
+
+a:active {
+    color: var();
+}
+
+#nav-mob {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

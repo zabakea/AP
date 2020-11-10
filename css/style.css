@@ -50,12 +50,13 @@ header {
 header nav {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 3rem;
 
 }
 
 header nav ul {
+    margin: 0;
     list-style: none;
     padding: 0;
     text-align: center;
@@ -65,14 +66,13 @@ header nav ul li {
     padding: 2rem 0;
     font-family: var(--font-body);
     color: var(--secondary-color);
-    font-weight: 600;
 }
 
-.primary-nav {
-    font-weight: 600;
+.prim-nav {
+        font-weight: 600;
 }
 
-.secondary-nav {
+.sec-nav {
     font-weight: 300;
 }
 

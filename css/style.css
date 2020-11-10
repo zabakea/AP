@@ -1,8 +1,10 @@
 :root {
    --primary-color: #FF9632;
     --secondary-color: #386082;
+    --terciary-color:#218169;
     --font-color-primary: #0B131A;
     --font-color-secondary: #FFFFFF;
+    --primary-color-buttons:  #40407F;
     --font-body: 'Open Sans', sans-serif;
     --font-headers:  'Aleo', serif;
 }

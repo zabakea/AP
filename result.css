@@ -1,5 +1,30 @@
 @media only screen and (max-width: 600px) {
 
+    .container {
+        max-width: 450px;
+        position: relative;
+        align-content: center;
+        display: flex;
+
+    }
+/*
+    img {
+        width: 400px;
+
+
+    }
+*/
+    .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+
 
 }
 

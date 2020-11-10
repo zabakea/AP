@@ -1,3 +1,12 @@
+:root {
+   --primary-color: #FF9632;
+    --secondary-color: #386082;
+    --font-color-primary: #0B131A;
+    --font-color-secondary: #FFFFFF;
+    --font-body: 'Open Sans', sans-serif;
+    --font-headers:  'Aleo', serif;
+}
+
 /* HEADER STYLE */
 
 header {

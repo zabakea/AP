@@ -44,18 +44,28 @@ header {
 }
 
 #close-icon {
- position: relative;
+    position: relative;
 }
 
-.header-links {
+header nav {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+header nav ul {
     list-style: none;
-    text-align: center;
     padding: 0;
-    margin: 0;
+    text-align: center;
 }
 
-li {
-    padding: 1.3rem 0;
+header nav ul li {
+    padding: 2rem 0;
+    font-family: var(--font-body);
+    color: var(--secondary-color);
+    font-weight: 600;
 }
 
 .primary-nav {

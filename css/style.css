@@ -4,6 +4,6 @@
     --secondary-color: #386082;
     --font-color-primary: #0B131A;
     --font-color-secondary: #FFFFFF;
-    --font-body: 'Montserrat', sans-serif;
-    --font-headers: 'Domine', serif;
+    --font-body: "Roboto",sans-serif;
+    --font-headers: "Roboto Slab",serif;
 }

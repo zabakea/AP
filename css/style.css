@@ -120,7 +120,7 @@ header nav ul li {
 #test-background {
     height: 100vh;
     width: auto;
-    background-image:url("teachermobile.png");
+    background-image: url("teacher.png");
     border-bottom-right-radius: 3rem;
 }
 

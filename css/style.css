@@ -156,7 +156,7 @@ header nav ul li {
 }
 
 #see-all-options-container {
-    margin: 4rem 0;
+    margin: 10rem 0;
     padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
@@ -164,6 +164,11 @@ header nav ul li {
     align-items: center;
 }
 
+#about-us {
+    margin: 10rem 0;
+    padding: 0 1.5rem;
+    text-align: center;
+}
 
 /* ANIMATIONS */
 

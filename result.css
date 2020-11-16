@@ -12,7 +12,7 @@
 @media only screen and (max-width: 450px) {
 
     img {
-        width: 400px;
+        max-width:  width: 400px;
     }
     .card {
         position: relative;
@@ -110,4 +110,55 @@ body {
 #see_all:active {
 	position:relative;
 	top:1px;
+}
+
+/*nav*/
+header {
+    padding: 1rem;
+    background-color: white;
+}
+
+#nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close-icon {
+    position: relative;
+}
+
+header nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+}
+
+header nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    padding: 2rem 0;
+    font-family: var(--font-body);
+    color: var(--secondary-color);
+}
+
+.prim-nav {
+        font-weight: 600;
+}
+
+.sec-nav {
+    font-weight: 300;
+}
+
+/* ANIMATIONS */
+
+.hide {
+    display: none;
 }

@@ -27,6 +27,7 @@ h1 {
     color: var(--secondary-color);
     font-size: 5rem;
     font-weight: 400;
+    margin: 0;
 }
 
 .white-text {
@@ -38,6 +39,7 @@ h1 {
 }
 
 button {
+    margin-top: 6rem;
     background-color: var(--primary-color-buttons);
     color: white;
     text-transform: uppercase;
@@ -133,10 +135,16 @@ header nav ul li {
     width: auto;
     background-image: url("teacher.png");
     border-bottom-right-radius: 3rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#take-a-test-container {
-    padding: 0 3rem;
+#see-all-options-container {
+    margin: 4rem 0;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

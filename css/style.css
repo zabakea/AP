@@ -175,17 +175,16 @@ header nav ul li {
     display: flex;
 }
 
-/*
 #avatar {
-    position: absolute;
-    left: 1rem;
+    position: relative;
+    left: 6rem;
 }
-*/
 
 #text-overlap {
-    position: absolute;
-    left: 18rem;
-    top: 59rem;
+    position: relative;
+    left: -6rem;
+    top: 5rem;
+    width: 15rem;
 }
 
 

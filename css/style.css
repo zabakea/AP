@@ -199,3 +199,10 @@ header nav ul li {
 .hide {
     display: none;
 }
+
+.questions {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
+}

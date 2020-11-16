@@ -30,11 +30,19 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: var(--font-headers);
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
 h3 {
     color: var(--secondary-color);
     font-family: var(--font-body);
-    text-transform: uppercase;
     font-weight: 800;
+    font-size: 1.4rem;
 }
 
 p {
@@ -156,13 +164,30 @@ header nav ul li {
 }
 
 #see-all-options-container {
-    margin: 10rem 0;
-    padding: 0 1.5rem;
+    margin: 4rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+#avatar-container {
+    display: flex;
+}
+
+/*
+#avatar {
+    position: absolute;
+    left: 1rem;
+}
+*/
+
+#text-overlap {
+    position: absolute;
+    left: 18rem;
+    top: 59rem;
+}
+
 
 #about-us {
     margin: 10rem 0;

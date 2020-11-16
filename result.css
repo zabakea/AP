@@ -11,22 +11,11 @@
 
 @media only screen and (max-width: 450px) {
 
-    .container {
-        max-width: 450px;
-        position: relative;
-        align-content: center;
-        display: flex;
-
-    }
-/*
     img {
         width: 400px;
-
-
     }
-*/
     .card {
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         text-align: center;
@@ -34,6 +23,9 @@
     }
     .card img {
         max-width: 450px;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .card button {
         margin-top: 1rem;
@@ -41,12 +33,29 @@
     .card h2 {
         font-family: 'Aleo', solid;
         font-size: 1.8rem;
-        color: #FF9632;
+        color: #386082;
     }
     .card article {
         font-family: open sans;
         font-size: 1.1rem;
-        color: #fff;
+        color: #40407F;
+        margin-top: 19rem
+    }
+    .see_all h3 {
+        text-align: center;
+        margin-top: 5rem;
+        font-family: 'aleo',solid;
+        font-size: 1.7rem;
+        color: #40407F;
+    }
+    .see_all p {
+        text-align: center;
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.1rem;
+
+    }
+    .see_all {
+        text-align: center;
     }
 
 
@@ -57,9 +66,9 @@
 body {
     background-color: #ECEFF2;
 }
+/*button */
+
 #read_more {
-/*	box-shadow:inset 0px 1px 0px 0px #fff6af;*/
-/*	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);*/
 	background-color:#FF9632;
 	border-radius:6px;
 	display:inline-block;
@@ -68,15 +77,37 @@ body {
 	font-family: open-sans;
 	font-size:20px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:10px 28px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffee66;
 }
 #read_more:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	background-color:#ffab23;
 }
 #read_more:active {
+	position:relative;
+	top:1px;
+}
+#see_all {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:5px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'open sans',sans-serif;
+	font-size:1.3rem;
+	padding:10px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+#see_all:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+#see_all:active {
 	position:relative;
 	top:1px;
 }

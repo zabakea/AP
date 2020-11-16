@@ -4,11 +4,11 @@
 
     --background-color: #ECEFF2;
 
-    --terciary-color:#218169;
+    --terciary-color: #218169;
 
     --font-color-primary: #0B131A;
     --font-color-secondary: #FFFFFF;
-    --primary-color-buttons:  #40407F;
+    --primary-color-buttons: #40407F;
     --font-body: 'Open Sans', sans-serif;
     --font-headers: 'Aleo', serif;
 }
@@ -73,7 +73,7 @@ header nav ul li {
 }
 
 .prim-nav {
-        font-weight: 600;
+    font-weight: 600;
 }
 
 .sec-nav {
@@ -84,4 +84,11 @@ header nav ul li {
 
 .hide {
     display: none;
+}
+
+.questions {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid red;
 }

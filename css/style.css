@@ -6,11 +6,11 @@
 
     --background-color: #ECEFF2;
 
-    --terciary-color:#218169;
+    --terciary-color: #218169;
 
     --font-color-primary: #0B131A;
     --font-color-secondary: #FFFFFF;
-    --primary-color-buttons:  #40407F;
+    --primary-color-buttons: #40407F;
     --font-body: 'Open Sans', sans-serif;
     --font-headers: 'Aleo', serif;
 }
@@ -26,6 +26,7 @@ h1 {
     font-family: var(--font-headers);
     color: var(--secondary-color);
     font-size: 5rem;
+    font-weight: 400;
 }
 
 .white-text {
@@ -36,22 +37,31 @@ h1 {
     z-index: 99;
 }
 
-.cta {
-    background-color: var(--primary-color);
-    border: solid var(--primary-color) 1px;
+button {
+    background-color: var(--primary-color-buttons);
     color: white;
     text-transform: uppercase;
     font-family: var(--font-body);
     font-size: 1.3rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
+    border: solid var(--primary-color-buttons) 2px;
+}
+
+button:hover {
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--primary-color-buttons);
+}
+
+.cta {
+    background-color: var(--primary-color);
+    border: solid var(--primary-color) 1px;
 }
 
 .cta:hover {
-    background-color: transparent;
     color: var(--primary-color);
-    font-weight: 600;
-    border: solid var(--primary-color) 1px;
+    border: solid var(--primary-color) 2px;
 }
 
 a {
@@ -107,7 +117,7 @@ header nav ul li {
 }
 
 .prim-nav {
-        font-weight: 600;
+    font-weight: 600;
 }
 
 .sec-nav {

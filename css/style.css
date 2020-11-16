@@ -118,6 +118,7 @@ header nav ul li {
 /* HOMEPAGE */
 
 #test-background {
+    z-index: 0;
     height: 100vh;
     width: auto;
     background-image: url("teacher.png");
@@ -125,13 +126,8 @@ header nav ul li {
 }
 
 #take-a-test-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100wv;
-    height: 100vh;
     padding: 0 3rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

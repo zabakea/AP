@@ -307,5 +307,40 @@ label {
 
 footer {
     background-color: var(--secondary-color);
-    height: 25rem;
+    height: 20rem;
+}
+/*inside footer*/
+.hours {
+    background-color: #FF9632;
+    border-radius: 15px;
+    margin: 18px;
+}
+#info .logo {
+    text-align: center;
+}
+.hours li {
+    display: inline-block;
+    padding: 18px;
+    list-style: none;
+    font-family: 'aleo',serif;
+    color: #0B131A;
+    font-size: 13px;
+}
+.hours h4 {
+    font-family: 'open sans', sans-serif;
+    margin-left: 5px;
+    color: #386082;
+    font-size: 20px;
+}
+.hours .number {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'aleo', serif;
+}
+#info .address {
+    font-family: 'open sans', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
 }

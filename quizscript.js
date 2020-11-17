@@ -38,11 +38,34 @@ function prevQ() {
     quiz();
 }
 
+let result;
+
 document.querySelector(".q4 form").addEventListener("change", (e) => {
-    console.log(e.target.id)
+    console.log(e.target.id);
+    result = e.target.id;
 })
 
-document.querySelector(".submit").addEventListener("click", (e) => {
+document.querySelector(".submit").addEventListener("click", () => {
 
-    console.log(e);
+    if (result == "married") {
+        console.log(result);
+        window.location = "result.html?your_situation=married"
+    }
+    if (result == "unmarried") {
+        console.log(result);
+        window.location = "result.html?your_situation=unmarried"
+    }
+    if (result == "divorced") {
+        console.log(result);
+        window.location = "result.html?your_situation=divorced"
+    }
+    if (result == "almostdivorced") {
+        console.log(result);
+        window.location = "result.html?your_situation=almostdivorced"
+    }
+    if (result == "almostmarried") {
+        console.log(result);
+        window.location = "result.html?your_situation=almostmarried"
+    }
+
 })

@@ -20,8 +20,11 @@ function showSituation(oneSituation) {
     const clone = template.cloneNode(true);
 
     //fill template
-    clone.querySelector("#card-title").textContent = oneSituation.title.rendered;
-    clone.querySelector("#short-description").textContent = oneSituation.excerpt.rendered;
+    clone.querySelector("#card-title").innerHTML = oneSituation.title.rendered;
+    clone.querySelector("#short-description").innerHTML = oneSituation.excerpt.rendered;
+
+    const img = clone.querySelector("img");
+    img.setAttribute("src", 'http://umarkx.com/AP/wp-content/uploads/2020/11/${oneSituation._embedded}.png')
 
     //append
     const parentElem = document.querySelector("section#life-situations");

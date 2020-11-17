@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 :root {
     --primary-color: #FF9632;
     --secondary-color: #386082;
 
     --background-color: #ECEFF2;
 
-    --terciary-color:#218169;
+    --terciary-color: #218169;
 
     --font-color-primary: #0B131A;
     --font-color-secondary: #FFFFFF;
-    --primary-color-buttons:  #40407F;
+    --primary-color-buttons: #40407F;
     --font-body: 'Open Sans', sans-serif;
     --font-headers: 'Aleo', serif;
 }
@@ -18,7 +20,72 @@ body {
     margin: 0;
 }
 
-/* GENERAL */
+/* GENERAL STYLE */
+
+h1 {
+    font-family: var(--font-headers);
+    color: var(--secondary-color);
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--font-headers);
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: var(--font-body);
+    line-height: 1.8rem;
+}
+
+.white-text {
+    color: white;
+}
+
+.bring-to-front {
+    z-index: 99;
+}
+
+button {
+    margin-top: 6rem;
+    background-color: var(--primary-color-buttons);
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    border: solid var(--primary-color-buttons) 2px;
+}
+
+button:hover {
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--primary-color-buttons);
+}
+
+.cta {
+    background-color: var(--primary-color);
+    border: solid var(--primary-color) 1px;
+}
+
+.cta:hover {
+    color: var(--primary-color);
+    border: solid var(--primary-color) 2px;
+}
 
 a {
     text-decoration: none;
@@ -52,7 +119,7 @@ header {
 }
 
 header nav {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
@@ -73,15 +140,126 @@ header nav ul li {
 }
 
 .prim-nav {
-        font-weight: 600;
+    font-weight: 600;
 }
 
 .sec-nav {
     font-weight: 300;
 }
 
+
+/* HOMEPAGE */
+
+#test-background {
+    z-index: 0;
+    height: 100vh;
+    width: auto;
+    background-image: url("teacher.png");
+    border-bottom-right-radius: 3rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#see-all-options-container {
+    margin: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar-container {
+    display: flex;
+}
+
+#avatar {
+    position: relative;
+    left: 6rem;
+}
+
+#text-overlap {
+    position: relative;
+    left: -6rem;
+    top: 2rem;
+    width: 15rem;
+}
+
+
+#about-us {
+    margin: 10rem 0;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
 /* ANIMATIONS */
 
 .hide {
     display: none;
+}
+
+
+
+/* QUESTION */
+.questions {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.next {
+    position: absolute;
+    bottom: 2vw;
+    right: 4vw;
+}
+
+.back {
+    position: absolute;
+    bottom: 2vw;
+    left: 4vw;
+}
+
+.submit {
+    position: absolute;
+    bottom: 2vw;
+    right: 4vw;
+}
+
+.q0 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+.q1 {
+    text-align: center;
+    padding-top: 35vw;
+
+    font-style: normal;
+}
+
+.q2 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+.q3 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+.q4 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+label {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family: var(--font-headers);
+}
+
+.inherit {
+    display: inherit;
 }

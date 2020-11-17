@@ -1,3 +1,56 @@
+const bgmenu = document.querySelector("#bg-menu-icon");
+const nav = document.querySelector("#nav");
+const close = document.querySelector("#close-icon");
+const logo = document.querySelector("#logo-icon");
+const login = document.querySelector("#login-icon");
+const pension = document.querySelector("#pension");
+const nav2 = document.querySelector(".sec-nav")
+
+bgmenu.addEventListener("click", openBgMenu);
+
+function openBgMenu() {
+    console.log("openBgMenu");
+
+    nav.classList.remove("hide");
+    bgmenu.classList.add("hide");
+    close.classList.remove("hide");
+    logo.classList.add("hide");
+    login.classList.add("hide");
+    close.addEventListener("click", closeBgMenu);
+    pension.addEventListener("click", showSecNav);
+}
+
+function closeBgMenu() {
+    console.log("close Bg Menu");
+
+    close.classList.add("hide");
+    bgmenu.classList.remove("hide");
+    nav.classList.add("hide");
+    logo.classList.remove("hide");
+    login.classList.remove("hide");
+    nav2.classList.add("hide");
+
+    bgmenu.addEventListener("click", openBgMenu);
+}
+
+function showSecNav() {
+    console.log("show nav2");
+
+    nav2.classList.remove("hide");
+    pension.removeEventListener("click", showSecNav);
+    pension.addEventListener("click", hideSecNav);
+}
+
+function hideSecNav() {
+    console.log("hide nav2");
+
+    nav2.classList.add("hide");
+    pension.removeEventListener("click", hideSecNav);
+    pension.addEventListener("click", showSecNav);
+}
+
+
+
 //fetch data
 fetch("http://umarkx.com/AP/wp-json/wp/v2/your_situation?_embed&fbclid=IwAR2O_hLb5TT7ZypoAV6F7wQQnmZlAHYO9PWB_b1p4vF9zU1uHDdw3hZ-jW0")
     .then(function (response) {
@@ -10,12 +63,14 @@ fetch("http://umarkx.com/AP/wp-json/wp/v2/your_situation?_embed&fbclid=IwAR2O_hL
     })
 
 function dataReceived(situations) {
-    situations.forEach(situation => {showSituation(situation)});
+    situations.forEach(situation => {
+        showSituation(situation)
+    });
 }
 
 //executed once for each life situation
 function showSituation(oneSituation) {
-     //find the template
+    //find the template
     const template = document.querySelector("#situation-template").content;
     const clone = template.cloneNode(true);
 
@@ -23,13 +78,13 @@ function showSituation(oneSituation) {
     clone.querySelector("#card-title").innerHTML = oneSituation.title.rendered;
     clone.querySelector("#short-description").innerHTML = oneSituation.excerpt.rendered;
 
-//    let endpoint = oneSituation._embedded["wp:featuremedia"][0];
-//
-//    fetch(endpoint)
-//    .then(e => e.json())
-//    .then(response => {
-//        clone.querySelector("img").setAttribute("src", response.media_details.sizes.medium.source_url);
-//    })
+    //    let endpoint = oneSituation._embedded["wp:featuremedia"][0];
+    //
+    //    fetch(endpoint)
+    //    .then(e => e.json())
+    //    .then(response => {
+    //        clone.querySelector("img").setAttribute("src", response.media_details.sizes.medium.source_url);
+    //    })
     console.log(oneSituation)
 
     const img = clone.querySelector("img");

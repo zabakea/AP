@@ -49,19 +49,19 @@ function hideSecNav() {
     pension.addEventListener("click", showSecNav);
 }
 
-window.addEventListener("load", quiz);
-
-let currentPage = 0;
-
-function quiz() {
-    console.log("jebeno radi");
-    document.querySelector(".q" + currentPage).classlist.add("inherit");
-    document.querySelector(".next").addEventListener("click", nextQ);
-    document.querySelector(".back").addEventListener("click", prevQ);
-}
-
-function nextQ() {
-    console.log("kliknut next");
-    currentPage++;
-    quiz();
-}
+//window.addEventListener("load", quiz);
+//
+//let currentPage = 0;
+//
+//function quiz() {
+//    console.log("jebeno radi");
+//    document.querySelector(".q" + currentPage).classlist.add("inherit");
+//    document.querySelector(".next").addEventListener("click", nextQ);
+//    document.querySelector(".back").addEventListener("click", prevQ);
+//}
+//
+//function nextQ() {
+//    console.log("kliknut next");
+//    currentPage++;
+//    quiz();
+//}

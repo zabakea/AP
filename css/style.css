@@ -200,9 +200,66 @@ header nav ul li {
     display: none;
 }
 
+
+
+/* QUESTION */
 .questions {
     position: absolute;
     height: 100%;
     width: 100%;
-    border: 3px solid red;
+}
+
+.next {
+    position: absolute;
+    bottom: 2vw;
+    right: 4vw;
+}
+
+.back {
+    position: absolute;
+    bottom: 2vw;
+    left: 4vw;
+}
+
+.submit {
+    position: absolute;
+    bottom: 2vw;
+    right: 4vw;
+}
+
+.q0 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+.q1 {
+    text-align: center;
+    padding-top: 35vw;
+
+    font-style: normal;
+}
+
+.q2 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+.q3 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+.q4 {
+    text-align: center;
+    padding-top: 35vw;
+}
+
+label {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family: var(--font-headers);
+}
+
+.inherit {
+    display: inherit;
 }

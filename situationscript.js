@@ -10,7 +10,7 @@ fetch("http://umarkx.com/AP/wp-json/wp/v2/your_situation?_embed&fbclid=IwAR2O_hL
     })
 
 function dataReceived(situations) {
-    situations.forEach(showSituation);
+    situations.forEach(situation => {showSituation(situation)});
 }
 
 //executed once for each life situation
@@ -23,8 +23,18 @@ function showSituation(oneSituation) {
     clone.querySelector("#card-title").innerHTML = oneSituation.title.rendered;
     clone.querySelector("#short-description").innerHTML = oneSituation.excerpt.rendered;
 
+//    let endpoint = oneSituation._embedded["wp:featuremedia"][0];
+//
+//    fetch(endpoint)
+//    .then(e => e.json())
+//    .then(response => {
+//        clone.querySelector("img").setAttribute("src", response.media_details.sizes.medium.source_url);
+//    })
+    console.log(oneSituation)
+
     const img = clone.querySelector("img");
-    img.setAttribute("src", 'http://umarkx.com/AP/wp-content/uploads/2020/11/${oneSituation._embedded}.png')
+    img.setAttribute("src", oneSituation._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url);
+
 
     //append
     const parentElem = document.querySelector("section#life-situations");

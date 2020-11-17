@@ -12,10 +12,11 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
 </style>
 
 <body>
-<header>
+    <header>
         <div id="nav-icons">
             <div id="bg-menu-icon" class="bg-menu">
                 <svg id="burger_menu" data-name="burger menu" xmlns="http://www.w3.org/2000/svg" width="24" height="20.571" viewBox="0 0 24 20.571">
@@ -91,12 +92,19 @@
         </nav>
     </header>
     <main>
-            <div class="card">
-                <h2 id="card-title">Buying a new house</h2>
-                <img src="img/House.png">
-                <article><p>As a couple, you may need to secure each other financially if you buy a new home together.</p></article>
-                <a href="moreresult.html"><button id="result-button" class="cta">Read more</button></a>
-            </div>
+
+        <section class="cardzzz">
+            <template id="resultTemplate">
+                <div class="card">
+                    <h2 id="card-title">Buying a new house</h2>
+                    <img src="img/House.png">
+                    <article>
+                        <p class="desc">A brief description goes here.</p>
+                    </article>
+                    <button id="result-button" class="cta">Read more</button>
+                </div>
+            </template>
+        </section>
 
         <div class="see_all">
             <h3>Not You?</h3>
@@ -105,5 +113,7 @@
         </div>
     </main>
 
-    <script src="script.js"></script>
-</body></html>
+    <script src="result.js"></script>
+</body>
+
+</html>

@@ -71,6 +71,7 @@ body {
 #read_more {
 	background-color:#FF9632;
 	border-radius:6px;
+    border: none;
 	display:inline-block;
 	cursor:pointer;
 	color: #ffffff;
@@ -93,7 +94,7 @@ body {
 	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
 	background-color:#007dc1;
 	border-radius:5px;
-	border:1px solid #124d77;
+	border: none;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;

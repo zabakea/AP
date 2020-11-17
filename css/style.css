@@ -194,6 +194,45 @@ header nav ul li {
     text-align: center;
 }
 
+/* RESULT */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+    padding: 0 1.5rem;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.see_all {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#see-all-button {
+    margin-top: 2rem;
+}
+
+#result-button {
+    margin-top: 2rem;
+}
+
+#not-you-p {
+    margin-top: 0;
+}
+
+#card-title {
+    text-align: center;
+}
+
 /* ANIMATIONS */
 
 .hide {

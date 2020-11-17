@@ -22,7 +22,7 @@ function quiz() {
 function nextQ() {
     console.log("kliknut next");
     currentPage++;
-    if (currentPage == 4) {
+    if (currentPage == 5) {
         document.querySelector(".next").classList.add("hide");
         document.querySelector(".back").classList.add("hide");
         document.querySelector(".submit").classList.remove("hide");
@@ -37,3 +37,12 @@ function prevQ() {
     currentPage--;
     quiz();
 }
+
+document.querySelector(".q4 form").addEventListener("change", (e) => {
+    console.log(e.target.id)
+})
+
+document.querySelector(".submit").addEventListener("click", (e) => {
+
+    console.log(e);
+})

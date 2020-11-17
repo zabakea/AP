@@ -312,39 +312,61 @@ label {
 footer {
     background-color: var(--secondary-color);
     height: 20rem;
+    display: grid;
 }
+
 /*inside footer*/
 .hours {
     background-color: #FF9632;
     border-radius: 15px;
     margin: 18px;
+    display: grid;
 }
-#info .logo {
+
+#info {
     text-align: center;
+    margin-top: 20vw;
 }
+
 .hours li {
-    display: inline-block;
-    padding: 18px;
     list-style: none;
-    font-family: 'aleo',serif;
+    font-family: var(--font-headers);
     color: #0B131A;
-    font-size: 13px;
+    font-size: 3vw;
+    text-decoration: none;
 }
+
 .hours h4 {
     font-family: 'open sans', sans-serif;
-    margin-left: 5px;
     color: #386082;
-    font-size: 20px;
+    font-size: 6vw;
+    text-align: center;
 }
+
 .hours .number {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 5vw;
+
     color: #ffffff;
-    font-family: 'aleo', serif;
+    font-family: var(--font-headers);
 }
+
 #info .address {
-    font-family: 'open sans', sans-serif;
+    font-family: var(--font-headers);
     text-align: center;
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 3vw;
+}
+
+#logoFooter {
+    width: 50%;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wh {
+    margin: auto;
+    position: relative;
+    text-decoration: none;
+    padding: 0;
 }

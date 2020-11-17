@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,18 +85,23 @@
         </nav>
     </header>
     <main>
-        <template id="situation-template">
-            <article id="situation">
-                <div class="card">
+        <section id="life-situations">
+            <template id="situation-template">
+
+                <article id="single-situation" class="card">
                     <h2 id="card-title">Buying a new house</h2>
                     <img src="img/House.png">
-                    <p>A brief description goes here.</p>
+                    <p id="short-description">A brief description goes here.</p>
                     <button id="result-button" class="cta">Read more</button>
-                </div>
-            </article>
-        </template>
+                </article>
+
+            </template>
+        </section>
     </main>
     <footer>
     </footer>
-    <script src="script.js"></script>
-</body></html>
+    <!--    <script src="script.js"></script>-->
+    <script src="situationscript.js"></script>
+</body>
+
+</html>

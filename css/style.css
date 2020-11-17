@@ -263,3 +263,10 @@ label {
 .inherit {
     display: inherit;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary-color);
+    height: 25rem;
+}

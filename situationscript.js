@@ -78,13 +78,6 @@ function showSituation(oneSituation) {
     clone.querySelector("#card-title").innerHTML = oneSituation.title.rendered;
     clone.querySelector("#short-description").innerHTML = oneSituation.excerpt.rendered;
 
-    //    let endpoint = oneSituation._embedded["wp:featuremedia"][0];
-    //
-    //    fetch(endpoint)
-    //    .then(e => e.json())
-    //    .then(response => {
-    //        clone.querySelector("img").setAttribute("src", response.media_details.sizes.medium.source_url);
-    //    })
     console.log(oneSituation)
 
     const img = clone.querySelector("img");

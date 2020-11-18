@@ -50,22 +50,33 @@ function hideSecNav() {
 }
 
 
+//const urlParams = new URLSearchParams(window.location.search);
+//    console.log("URLSearchParams" + window.location);
+//    const oneSitu_id = urlParams.get("oneSituation_id");
+//    console.log(oneSitu_id);
 
-//fetch data
-fetch("http://umarkx.com/AP/wp-json/wp/v2/your_situation?_embed&fbclid=IwAR2O_hLb5TT7ZypoAV6F7wQQnmZlAHYO9PWB_b1p4vF9zU1uHDdw3hZ-jW0")
-    .then(function (response) {
-        console.log(response);
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-        dataReceived(data);
-    })
+window.addEventListener('DOMContentLoaded', getData);
+
+const link = "http://umarkx.com/AP/wp-json/wp/v2/your_situation?_embed&fbclid=IwAR2O_hLb5TT7ZypoAV6F7wQQnmZlAHYO9PWB_b1p4vF9zU1uHDdw3hZ-jW0";
+
+function getData() {
+    //fetch data
+    fetch(link)
+        .then(function (response) {
+            console.log(response);
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            dataReceived(data);
+        })
+}
 
 function dataReceived(situations) {
     situations.forEach(situation => {
         showSituation(situation)
     });
+
 }
 
 //executed once for each life situation

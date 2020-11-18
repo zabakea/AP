@@ -74,6 +74,9 @@ function showSituation(oneSituation) {
     const template = document.querySelector("#situation-template").content;
     const clone = template.cloneNode(true);
 
+    const a = clone.querySelector('a');
+    a.href += oneSituation.id;
+
     //fill template
     clone.querySelector("#card-title").innerHTML = oneSituation.title.rendered;
     clone.querySelector("#short-description").innerHTML = oneSituation.excerpt.rendered;

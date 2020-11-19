@@ -87,6 +87,7 @@ function showSituation(oneSituation) {
     const clone = template.cloneNode(true);
 
     const situDescription = clone.querySelector("#situation-description");
+
     if (situDescription) {
         situDescription.innerHTML = oneSituation.excerpt.rendered;
     }
